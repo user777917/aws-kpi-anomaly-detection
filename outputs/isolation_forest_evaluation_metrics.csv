@@ -1,0 +1,2 @@
+project,use_case,model,contamination,precision,recall,f1_score,test_samples,true_anomalies,predicted_anomalies,true_anomaly_rate_percent,predicted_anomaly_rate_percent
+AWS-Based Time-Series Anomaly Detection Pipeline for Operational Intelligence,Telecom KPI anomaly detection,Isolation Forest,0.025,0.8125,0.8125,0.8125,3456,80,80,2.314814814814815,2.314814814814815

@@ -1,0 +1,33 @@
+
+AWS-Based Time-Series Anomaly Detection Pipeline for Operational Intelligence
+
+Use case:
+Telecom KPI anomaly detection
+
+Dataset:
+- Synthetic telecom KPI dataset
+- Total records: 11,520
+- Test records: 3456
+- True anomalies in test set: 80
+- True anomaly rate in test set: 2.31%
+
+Local ML model:
+- Isolation Forest
+- Selected contamination value: 0.025
+
+Evaluation:
+- Precision: 0.8125
+- Recall: 0.8125
+- F1-score: 0.8125
+- Predicted anomalies: 80
+- Predicted anomaly rate: 2.31%
+
+AWS cloud component:
+- Amazon S3 bucket created: masood-kpi-anomaly-detection-2026
+- Raw and processed data uploaded to S3
+- Amazon SageMaker Random Cut Forest training completed successfully
+- SageMaker model artifact stored in S3:
+  s3://masood-kpi-anomaly-detection-2026/models/rcf/randomcutforest-2026-05-19-10-02-30-019/output/model.tar.gz
+
+Cloud deployment note:
+Batch Transform inference was planned but not executed because the AWS account-level quota for ml.m5.large transform job usage was 0 and the quota increase request was not approved at this stage.
