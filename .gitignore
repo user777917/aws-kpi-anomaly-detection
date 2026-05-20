@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Anaconda
+anaconda_projects/
+
+# Environment files
+.env
+.venv/
+venv/
+env/
+
+# AWS credentials - never upload
+.aws/
+credentials
+config
+
+# Temporary files
+*.log
+*.tmp
